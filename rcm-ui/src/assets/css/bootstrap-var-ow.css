@@ -1,0 +1,6 @@
+.btn-dark {
+  --bs-btn-hover-border-color: var(--bs-btn-border-color);
+  --bs-btn-focus-border-color: var(--bs-btn-border-color);
+  --bs-btn-active-border-color: var(--bs-btn-border-color);
+  --bs-btn-focus-box-shadow: var(--bs-btn-box-shadow);
+}

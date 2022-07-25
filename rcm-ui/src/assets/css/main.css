@@ -1,0 +1,41 @@
+body {
+  background-color: #121212;
+}
+
+.surface-background-material {
+  background-color: #121212 !important;
+}
+
+.elevated-background-material {
+	background-color: hsla(0, 0%, 13%, 0.50);
+}
+
+.surface-text-material {
+  color: #FFFFFF !important;
+}
+
+.surface-secondary-text-material {
+  color: #616161 !important;
+}
+
+.elevated-text-material {
+  color: #FFFFFF !important;
+}
+
+.primary-background-material {
+  background-color: #BC0F0F !important;
+}
+
+.primary-text-material {
+  color: #000000 !important;
+}
+
+/* applica overlay del bianco 4% (100 - 4) */
+.primary-background-material:hover {
+  background-color: #BD1515 !important;
+}
+
+/* applica overlay del 10% (100 - 10) */
+.primary-background-material:active {
+  background-color: #bd2c2c !important;
+}
