@@ -63,7 +63,4 @@
 export default {
   name: 'LoginForm'
 }
-if (1 == 1) {
-
-}
 </script>
