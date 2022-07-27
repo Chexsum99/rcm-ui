@@ -15,10 +15,10 @@
                   <form>
 
                     <div class="align-items-center mb-3 pb-1">
-                      <img src="../assets/images/dnd_logo.png" alt="login logo"/>
+                      <img src="../assets/images/dnd_logo.png" class="img-fluid w-25 p-3" style="opacity: 0.75" alt="login logo"/>
                     </div>
                     <div class="align-items-center mb-3 pb-1">
-                      <span class="h1 fw-bold mb-0">Log in</span>
+                      <span class="h1 fw-bold mb-0">Log in t</span>
                     </div>
 
                     <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Accedi alle tue campagne</h5>
