@@ -3,10 +3,12 @@
 </template>
 
 <script>
-import LoginForm from './components/LoginForm.vue'
+import LoginForm from "./components/LoginForm.vue";
+
+ document.title = "RPG Campaigns Maker | RCM";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     LoginForm
   }
