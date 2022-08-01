@@ -6,7 +6,7 @@
           <div class="card elevated-background-material" style="border-radius: 1rem;">
             <div class="row g-0">
               <div class="col-md-6 col-lg-5 d-none d-md-block">
-                <img src="../assets/images/tasha_login.jpg"
+                <img src="../../assets/images/tasha_login.jpg"
                   alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; opacity: 0.75" />
               </div>
               <div class="col-md-6 col-lg-7 d-flex align-items-center">
@@ -15,7 +15,7 @@
                   <form>
 
                     <div class="align-items-center mb-3 pb-1">
-                      <img src="../assets/images/dnd_logo.png" class="img-fluid w-25 p-3" style="opacity: 0.75" alt="login logo"/>
+                      <img src="../../assets/images/dnd_logo.png" class="img-fluid w-25 p-3" style="opacity: 0.75" alt="login logo"/>
                     </div>
                     <div class="align-items-center mb-3 pb-1">
                       <span class="h1 fw-bold mb-0">Log in</span>
@@ -38,8 +38,10 @@
                     </div>
 
                     <p class="mb-5 pb-lg-2 surface-secondary-text-material">
-                      Non hai un account? 
-                      <a href="#!" class="surface-secondary-text-material">Inizia qui</a>
+                      Non hai un account?
+                      <router-link :to="{ name: 'Signup' }">
+                        <a href="#!" class="surface-secondary-text-material">Inizia qui</a>
+                      </router-link>
                     </p>
 
                     

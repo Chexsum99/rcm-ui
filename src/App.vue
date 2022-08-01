@@ -1,9 +1,9 @@
 <template>
-  <LoginForm />
+  <router-view />
 </template>
 
-<script>
-import LoginForm from "./components/LoginForm.vue";
+<!--<script>
+import LoginForm from "./components/login/LoginForm.vue";
 
  document.title = "RPG Campaigns Maker | RCM";
 
@@ -13,7 +13,7 @@ export default {
     LoginForm
   }
 }
-</script>
+</script>-->
 
 <style>
 #app {
