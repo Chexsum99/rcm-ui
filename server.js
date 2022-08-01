@@ -1,10 +1,15 @@
 const express = require("express");
+const basicAuth = require("express-basic-auth");
 const serveStatic = require("serve-static");
 const path = require("path");
 
 const app = express();
 
 // here we are configuring dist to serve app files
+app.use(basicAuth({
+	challenge: true,
+	users: { 'ProjectRCM': 'DrizztMeme' }
+}));
 app.use("/", serveStatic(path.join(__dirname, "/dist")));
 app.disable("x-powered-by");
 
