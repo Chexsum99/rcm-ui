@@ -1,22 +1,27 @@
 import { createWebHistory, createRouter } from "vue-router";
-import LoginForm from "../components/login/LoginForm.vue";
-import SignUpForm from "../components/login/SignUpForm.vue";
+import SignupView from "@/views/SignupView.vue";
+import LoginView from "@/views/LoginView.vue";
 
 const routes = [
   {
     path: "/",
-    name: "LoginRoot",
-    component: LoginForm    
+    name: "HomeView",
+    component: LoginView // TODO: HomeView  
   },
   {
     path: "/login",
-    name: "Login",
-    component: LoginForm
+    name: "LoginView",
+    component: LoginView
   },
   {
     path: "/register",
-    name: "Signup",
-    component: SignUpForm 
+    name: "SignupView",
+    component: SignupView 
+  },
+  {
+    path: "/reset",
+    name: "ResetView",
+    component: SignupView // TODO: ResetView
   }
 ];
 

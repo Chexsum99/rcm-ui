@@ -29,7 +29,7 @@ const store = createStore({
     async signup(context, { email, password, username }) {
       const response = await createUserWithEmailAndPassword(auth, email, password)
       if (response) {
-        updateProfile(response.user, username);
+        await updateProfile(response.user, {displayName: username});
         context.commit('setUser', response.user)
         await sendEmailVerification(response.user);
       } else {
