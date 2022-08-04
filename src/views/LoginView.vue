@@ -6,8 +6,8 @@
 <script>
 import EmptyCard from '@/components/commons/EmptyCard.vue';
 
-  export default {
-    name: "LoginView",
-    components: { EmptyCard }
+export default {
+  name: "LoginView",
+  components: { EmptyCard }
 }
 </script>
