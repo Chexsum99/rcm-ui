@@ -11,22 +11,22 @@
 
     <div class="form-outline mb-4 row">
       <div class="form-outline mb-4 col">
-        <input class="form-control form-control-md" type="email" name="email" v-model="email" required/>
+        <input class="form-control form-control-md input-material" type="email" name="email" v-model="email" required/>
         <label class="form-label" for="email">E-mail</label>
       </div>
       <div class="form-outline mb-4 col">
-        <input class="form-control form-control-md" type="text" name="username" v-model="username" required/>
+        <input class="form-control form-control-md input-material" type="text" name="username" v-model="username" required/>
         <label class="form-label" for="username">Username</label>
       </div>
     </div>
 
     <div class="form-outline mb-4 row">
       <div class="form-outline mb-4 col">
-        <input class="form-control form-control-md" type="password" name="password" v-model="password" required/>
+        <input class="form-control form-control-md input-material" type="password" name="password" v-model="password" required/>
       <label class="form-label" for="password">Password</label>
       </div>
       <div class="form-outline mb-4 col">
-        <input class="form-control form-control-md" type="password" name="passwordCtrl" v-model="passwordCtrl" required/>
+        <input class="form-control form-control-md input-material" type="password" name="passwordCtrl" v-model="passwordCtrl" required/>
       <label class="form-label" for="passwordCtrl">Ripeti password</label>
       </div>
     </div>

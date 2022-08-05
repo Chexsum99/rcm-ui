@@ -1,10 +1,12 @@
 <template>
-  <h1>THE HOME</h1>
-  <h5>Working on it...</h5>
+  <TheHome />
 </template>
 
 <script>
+import TheHome from "@/components/home/TheHome.vue";
+
 export default {
   name: "HomeView",
+  components: { TheHome }
 }
 </script>

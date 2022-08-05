@@ -10,6 +10,18 @@ body {
 	background-color: hsla(0, 0%, 13%, 0.50);
 }
 
+.input-material {
+  background-color: hsla(0, 100%, 100%, 0.05);
+  border-color: hsla(0, 100%, 100%, 0.05);
+  color: #FFFFFF !important;
+}
+
+.input-material:focus {
+  background-color: hsla(0, 100%, 100%, 0.08);
+  border-color: hsla(0, 100%, 100%, 0.08);
+	box-shadow: none;
+}
+
 .surface-text-material {
   color: #FFFFFF !important;
 }

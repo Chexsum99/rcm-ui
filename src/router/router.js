@@ -11,7 +11,7 @@ const routes = [
     name: "HomeView",
     component: HomeView, // TODO: HomeView
     meta: {
-      requiresAuth: true
+      requiresAuth: false
     }
   },
   {
@@ -48,7 +48,7 @@ const router = createRouter({
   routes,
 });
 
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, _from, next) => {
   if (to.meta.requiresAuth) {
     auth.onAuthStateChanged(user => {
       // If user obj does not exist --> redirect to login page
