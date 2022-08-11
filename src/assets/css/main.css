@@ -7,18 +7,23 @@ body {
 }
 
 .elevated-background-material {
-	background-color: hsla(0, 0%, 13%, 0.50);
+	background-color: rgba(255, 255, 255, 0.05);
+  box-shadow:
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  0px 1px 1px 0px hsla(0,0%,0%,0.14), 
+  0px 2px 1px -1px hsla(0,0%,0%,0.12), 
+  0px 1px 3px 0px hsla(0,0%,0%,0.2);
 }
 
 .input-material {
-  background-color: hsla(0, 100%, 100%, 0.05);
-  border-color: hsla(0, 100%, 100%, 0.05);
+  background-color: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.07);
   color: #FFFFFF !important;
 }
 
 .input-material:focus {
-  background-color: hsla(0, 100%, 100%, 0.08);
-  border-color: hsla(0, 100%, 100%, 0.08);
+  background-color: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.07);
 	box-shadow: none;
 }
 
@@ -43,11 +48,37 @@ body {
 }
 
 /* applica overlay del bianco 4% (100 - 4) */
-.primary-background-material:hover {
+/*.primary-background-material:hover {
   background-color: #BD1515 !important;
+}*/
+
+/* Classe necessaria su un button con effetto ripple o con overlay per l'hover */
+.btn-material {
+  position:relative;
+  overflow:hidden;
 }
 
-/* applica overlay del 10% (100 - 10) */
-.primary-background-material:active {
-  background-color: #bd2c2c !important;
+.material-hover {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.ripple {
+  width: 0%;
+  height: 0%;
+  position: absolute;
+  border-radius: 50%;
+  transform: scale(0);
+  background-color: rgba(255, 255, 255, 0.10);
+}
+
+.ripple-effect {
+  animation: ripple 600ms linear;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
 }

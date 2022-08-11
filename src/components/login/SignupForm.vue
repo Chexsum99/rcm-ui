@@ -32,8 +32,8 @@
     </div>
 
     <div class="pt-1 mb-4">
-      <button class="btn btn-dark btn-lg btn-block primary-background-material primary-text-material" 
-        type="submit" :disabled="isDisabled || !isPassEqual">
+      <button class="btn btn-dark btn-lg btn-block primary-background-material primary-text-material btn-material" 
+        type="submit" :disabled="isDisabled || !isPassEqual" v-ripple>
         Sign up
       </button>
     </div>

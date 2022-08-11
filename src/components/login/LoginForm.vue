@@ -20,7 +20,7 @@
     </div>
 
     <div class="pt-1 mb-4">
-      <button class="btn btn-dark btn-lg btn-block primary-background-material primary-text-material" type="button">Login</button>
+      <button class="btn btn-dark btn-lg btn-block primary-background-material primary-text-material btn-material" type="button" v-ripple>Login</button>
     </div>
 
     <router-link :to="{ name: 'LoginView' }">
