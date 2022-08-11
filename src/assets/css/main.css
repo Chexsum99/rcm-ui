@@ -48,9 +48,9 @@ body {
 }
 
 /* applica overlay del bianco 4% (100 - 4) */
-/*.primary-background-material:hover {
+.primary-background-material:hover {
   background-color: #BD1515 !important;
-}*/
+}
 
 /* Classe necessaria su un button con effetto ripple o con overlay per l'hover */
 .btn-material {
