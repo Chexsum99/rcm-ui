@@ -70,6 +70,12 @@ router.beforeEach((to, _from, next) => {
       }
     });
   } else {
+    auth.onAuthStateChanged(user => {
+      // If user obj does not exist --> redirect to login page
+      if (user) {
+        store.commit("setUser", user);
+      }
+    });
     next();
   }
 });
