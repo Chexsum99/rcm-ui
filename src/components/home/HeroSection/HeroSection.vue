@@ -22,7 +22,7 @@ export default {
   mounted: function () {
     this.timer = setInterval(() => {
       let imgArray = require("@/assets/images/landing/landing_" + this.counter + ".jpg");
-      document.getElementById("hero").style = "background: url(" + imgArray +") top center; background-size: cover;"
+      document.getElementById("hero").style = "background: url(" + imgArray + ") top center; background-size: cover;"
       this.counter++;
 
       if (this.counter > this.maxCount) {

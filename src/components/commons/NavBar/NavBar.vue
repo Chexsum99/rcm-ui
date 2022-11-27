@@ -3,7 +3,7 @@
       <div class="contain-fluid container-xl d-flex align-itmes-center justify-content-between left-div-logo">
         
         <router-link :to="{ name: 'HomeView' }" class="logo logo-text d-flex align-items-center">
-          <img :src="require('@/assets/images/dnd_home_logo.png')" alt="home" class="img-fluid logo-img" style="width:8%;">
+          <img :src="require('@/assets/images/dnd_home_logo.png')" alt="home" class="img-fluid logo-img" style="width:8%; opacity:0.75;">
         </router-link>
 
         <nav id="navbar" class="navbar">

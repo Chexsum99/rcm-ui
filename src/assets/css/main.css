@@ -82,3 +82,7 @@ body {
     opacity: 0;
   }
 }
+
+.error-text-color {
+  color: #BC0F0F !important;
+}
